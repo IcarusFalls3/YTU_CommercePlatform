@@ -15,8 +15,8 @@ public class User {
 	private String question;
 	private String asw;
 	private Integer role;
-	private LocalDateTime create_time;
-	private LocalDateTime update_time;
+	private Date create_time;
+	private Date update_time;
 	private String name;
 	public Integer getId() {
 		return id;
@@ -85,16 +85,16 @@ public class User {
 		this.role = role;
 	}
 	
-	public LocalDateTime getCreate_time() {
+	public Date getCreate_time() {
 		return create_time;
 	}
-	public void setCreate_time(LocalDateTime create_time) {
+	public void setCreate_time(Date create_time) {
 		this.create_time = create_time;
 	}
-	public LocalDateTime getUpdate_time() {
+	public Date getUpdate_time() {
 		return update_time;
 	}
-	public void setUpdate_time(LocalDateTime update_time) {
+	public void setUpdate_time(Date update_time) {
 		this.update_time = update_time;
 	}
 	public String getName() {

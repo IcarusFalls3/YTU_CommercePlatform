@@ -196,7 +196,7 @@ public class ActionProductDaoImpl implements ActionProductDao{
 	@Override
 	public List<ActionProduct> findProductsNoPage(ActionProduct condition) {
 		// TODO Auto-generated method stub
-		String sql = "select " +str+ " from action_products where 1=1 ";// Â§öÊù°‰ª∂
+		String sql = "select " +str+ " from action_products where 1=1 ";// ∂‡Ãıº˛
 		List<Object> params = new ArrayList<>();
 		if (condition.getId() != null) {
 			sql += " and id=? ";

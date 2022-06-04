@@ -10,6 +10,7 @@ import cn.techaction.dao.ActionUserDao;
 import cn.techaction.pojo.User;
 import cn.techaction.service.ActionUserService;
 import cn.techaction.utils.MD5Util;
+import cn.techaction.vo.ActionUserVo;
 
 @Service
 public class ActionUserServiceImpl implements ActionUserService{
@@ -35,6 +36,41 @@ public class ActionUserServiceImpl implements ActionUserService{
 		//÷√ø’√‹¬Î
 		user.setPassword(StringUtils.EMPTY);
 		return SverResponse.createRespBySuccess("µ«¬º≥…π¶",user);
+	}
+	@Override
+	public SverResponse<User> updateUserInfo(ActionUserVo userVo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public SverResponse<String> doRegister(User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public SverResponse<String> checkValidation(String str, String type) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public SverResponse<User> findUserByAccount(String account) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public SverResponse<String> checkUserAnswer(String account, String question, String asw) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public SverResponse<String> resetPassword(Integer userId, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public SverResponse<String> updatePassword(User user, String newPassword, String oldPassword) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }

@@ -22,7 +22,7 @@ public class ActionProductController {
 	private ActionProductService aProductService;
 	
 	@RequestMapping("/find_product.do")
-	@ResponseBody 
+	@ResponseBody
 	public SverResponse<PageBean<ActionProduct>> findProducts(Integer productId,Integer partsId ,
 			Integer pageNum,Integer pageSize){ //调用Service层的方法去分页查询 return
 	 return aProductService.findProduct(productId, partsId, pageNum, pageSize); 

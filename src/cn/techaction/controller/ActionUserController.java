@@ -21,7 +21,7 @@ import cn.techaction.utils.ConstUtil;
 //import cn.techaction.vo.ActionUserVo;
 
 @Controller
-@RequestMapping("/ht/user")
+@RequestMapping("/user")
 public class ActionUserController {
 	@Autowired
 	private ActionUserService actionUserService;

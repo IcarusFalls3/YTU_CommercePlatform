@@ -17,8 +17,8 @@ public class ActionProduct {
 	private Integer stock;
 	private Integer status;
 	private Integer hot;
-	private LocalDateTime created;
-	private LocalDateTime updated;
+	private Date created;
+	private Date updated;
 	public Integer getId() {
 		return id;
 	}
@@ -88,16 +88,16 @@ public class ActionProduct {
 		this.hot = hot;
 	}
 	
-	public LocalDateTime getCreated() {
+	public Date getCreated() {
 		return created;
 	}
-	public void setCreated(LocalDateTime created) {
+	public void setCreated(Date created) {
 		this.created = created;
 	}
-	public LocalDateTime getUpdated() {
+	public Date getUpdated() {
 		return updated;
 	}
-	public void setUpdated(LocalDateTime updated) {
+	public void setUpdated(Date updated) {
 		this.updated = updated;
 	}
 	public String getName() {
