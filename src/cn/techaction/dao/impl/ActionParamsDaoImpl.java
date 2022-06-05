@@ -32,9 +32,9 @@ public class ActionParamsDaoImpl implements ActionParamsDao{
 
 	@Override
 	public List<ActionParam> findParamsByParentId(Integer parentId) {
-//		String sql = "select id,parent_id,name,sort_order,status,level,created,updated from action_params where "
-//				+"parent_id = ? order by sort_order";
-		String sql = "select * from action_params where parent_id = ? order by sort_order";
+		String sql = "select id,parent_id,name,sort_order,status,level,created,updated from action_params where "
+				+"parent_id = ? order by sort_order";
+//		String sql = "select * from action_params where parent_id = ? order by sort_order";
 		try {
 			return queryRunner.query(sql, new BeanListHandler<ActionParam>(ActionParam.class),parentId);
 		} catch (SQLException e) {
@@ -47,8 +47,8 @@ public class ActionParamsDaoImpl implements ActionParamsDao{
 	@Override
 	public ActionParam findParamsByParentIdAndName(Integer parentId, String name) {
 		// TODO Auto-generated method stub
-		String sql="select * from action_params where parent_id=? and name=?";
-//		String sql="select id,parent_id,name,sort_order,status,level,created,updated from action_params where parent_id=? and name=?";
+//		String sql="select * from action_params where parent_id=? and name=?";
+		String sql="select id,parent_id,name,sort_order,status,level,created,updated from action_params where parent_id=? and name=?";
 		try {
 			return queryRunner.query(sql, new BeanHandler<ActionParam>(ActionParam.class),parentId,name);
 		}catch(SQLException e) {
